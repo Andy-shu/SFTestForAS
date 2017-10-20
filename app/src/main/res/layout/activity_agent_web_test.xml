@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sf.agentweb.AgentWebMainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        app:theme="@style/toolBar"
+        app:titleTextColor="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btn_agent_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_drawable_for_btn"
+        android:text="AgentWeb在activity中的使用"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_agent_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_drawable_for_btn"
+        android:text="AgentWeb在Fragment中的使用"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_agent_filedownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_drawable_for_btn"
+        android:text="测试文件下载"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_agent_fileupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_drawable_for_btn"
+        android:text="测试input文件上传"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_agent_js"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_drawable_for_btn"
+        android:text="测试JS通信"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>

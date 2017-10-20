@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sf.sftestforas.HttpTestActivity">
+
+    <Button
+        android:id="@+id/btn_get_syn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同步get请求"/>
+
+    <Button
+        android:id="@+id/btn_get_asyn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="异步get请求"/>
+
+    <Button
+        android:id="@+id/btn_post_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post方式提交string"/>
+
+    <Button
+        android:id="@+id/btn_post_stream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post方式提交流"/>
+
+    <Button
+        android:id="@+id/btn_post_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post方式提交文件"/>
+
+    <Button
+        android:id="@+id/btn_post_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post方式提交表单"/>
+
+    <Button
+        android:id="@+id/btn_post_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post方式分块请求"/>
+
+    <Button
+        android:id="@+id/btn_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请求头和响应头"/>
+
+    <Button
+        android:id="@+id/btn_gson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gson解析"/>
+
+
+</LinearLayout>

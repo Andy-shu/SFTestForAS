@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <script type="text/javascript">
+	function getCameraValue(arg) {
+		document.getElementById("content").innerHTML = "<br\>拍照结果：" + arg;
+		document.getElementById("image").src = arg;
+	}
+
+	function getQRCodeValue(arg) {
+		document.getElementById("content").innerHTML = ("<br\>二维码识别结果：" + arg);
+	}
+
+	function callAndroid() {
+	    //这里调用的是android客户端中WebChromeClient中的onJsPrompt方法
+        var ret = prompt( "callByJs", "参数1;参数2" );
+
+        //ret值即为java传回的”result”
+        //根据返回内容作相应处理
+
+        alert(ret);
+    }
+
+    </script>
+
+</head>
+<body>
+<h1>
+    <div id="content">内容显示</div>
+</h1>
+
+<p onclick="callAndroid();">点击调用android端方法</p>
+
+</body>
+</html>
